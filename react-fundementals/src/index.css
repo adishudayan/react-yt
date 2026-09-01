@@ -23,15 +23,31 @@ body {
   width: 100%;
 }
 body {
-  background-color: #1e1e1e;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .card {
+  width: 400px;
   background-color: #333;
   border: 1px solid #555;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   margin: 1rem;
+  gap: 1rem;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-button {
+  background-color: #60087a;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .navbar {
   background-color: #024832;
@@ -39,4 +55,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-category {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  border: 1px solid #555;
+  border-radius: 20px;
+  padding: 0.2rem 0.5rem;
+  background-color: #444;
+  width: fit-content;
 }
